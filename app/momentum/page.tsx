@@ -30,9 +30,9 @@ export default function MomentumPage() {
           <CardContent className="p-6">
              <div className="space-y-4">
                 {[
-                  { title: "Dot Ball Pressure", desc: "India restricted 4 of last 5 overs to < 3 runs", impact: "+12%" },
-                  { title: "Boundary Suppression", desc: "No boundaries in the last 28 deliveries", impact: "+18%" },
-                  { title: "Wicket Impact", desc: "Loss of Smith triggered severe structural disadvantage", impact: "-24%" }
+                  { title: "Dot Ball Pressure", desc: "GT restricted 4 of last 5 overs to < 8 runs", impact: "+12%" },
+                  { title: "Boundary Suppression", desc: "No boundaries in the last 15 deliveries", impact: "+18%" },
+                  { title: "Wicket Impact", desc: "Loss of Gaikwad triggered severe structural disadvantage", impact: "-24%" }
                 ].map((item, i) => (
                   <div key={i} className="flex justify-between items-center border-b border-white/5 pb-4 last:border-0 last:pb-0">
                     <div>

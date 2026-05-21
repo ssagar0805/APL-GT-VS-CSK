@@ -24,8 +24,8 @@ export function MomentumChart() {
         <div className="flex justify-between items-center">
           <CardTitle className="text-[10px] uppercase font-black tracking-[0.2em] text-slate-400">Live Structural Momentum</CardTitle>
           <div className="flex items-center space-x-2 text-[10px] font-bold uppercase tracking-widest">
-            <span className="flex items-center text-blue-400"><span className="w-2 h-2 rounded-full bg-blue-500 mr-2"></span>IND</span>
-            <span className="flex items-center text-yellow-500"><span className="w-2 h-2 rounded-full bg-yellow-500 mr-2"></span>AUS</span>
+            <span className="flex items-center text-blue-400"><span className="w-2 h-2 rounded-full bg-blue-500 mr-2"></span>GT</span>
+            <span className="flex items-center text-yellow-500"><span className="w-2 h-2 rounded-full bg-yellow-500 mr-2"></span>CSK</span>
           </div>
         </div>
       </CardHeader>
@@ -33,11 +33,11 @@ export function MomentumChart() {
         <ResponsiveContainer width="100%" height="100%">
           <AreaChart data={momentumSeries} margin={{ top: 10, right: 0, left: -20, bottom: 0 }}>
             <defs>
-              <linearGradient id="colorInd" x1="0" y1="0" x2="0" y2="1">
+              <linearGradient id="colorTeam1" x1="0" y1="0" x2="0" y2="1">
                 <stop offset="5%" stopColor="#3b82f6" stopOpacity={0.3}/>
                 <stop offset="95%" stopColor="#3b82f6" stopOpacity={0}/>
               </linearGradient>
-              <linearGradient id="colorAus" x1="0" y1="0" x2="0" y2="1">
+              <linearGradient id="colorTeam2" x1="0" y1="0" x2="0" y2="1">
                 <stop offset="5%" stopColor="#eab308" stopOpacity={0.3}/>
                 <stop offset="95%" stopColor="#eab308" stopOpacity={0}/>
               </linearGradient>
@@ -49,8 +49,8 @@ export function MomentumChart() {
               itemStyle={{ fontSize: '12px', fontWeight: 'bold' }}
               labelStyle={{ fontSize: '10px', color: '#64748b', textTransform: 'uppercase', letterSpacing: '0.1em' }}
             />
-            <Area type="monotone" dataKey="ind" stroke="#3b82f6" strokeWidth={3} fillOpacity={1} fill="url(#colorInd)" />
-            <Area type="monotone" dataKey="aus" stroke="#eab308" strokeWidth={3} fillOpacity={1} fill="url(#colorAus)" />
+            <Area type="monotone" dataKey="team1" stroke="#3b82f6" strokeWidth={3} fillOpacity={1} fill="url(#colorTeam1)" />
+            <Area type="monotone" dataKey="team2" stroke="#eab308" strokeWidth={3} fillOpacity={1} fill="url(#colorTeam2)" />
           </AreaChart>
         </ResponsiveContainer>
       </CardContent>

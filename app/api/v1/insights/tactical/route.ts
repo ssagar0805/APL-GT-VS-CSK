@@ -10,8 +10,8 @@ export async function GET() {
     headline: rotate ? "Tactical Execution: Bowling" : "Tactical Execution: Baseline",
     subheadline: rotate ? "The Dry Ball Strategy" : "Squeezing the Singles",
     description: rotate 
-      ? "Australia is actively attempting to preserve the ball's roughness to gain reverse swing. Cummins has adjusted his release point 4cm wider, creating a steeper entry angle."
-      : "India has brought mid-off and mid-on inside the circle, challenging the batters to go over the top on a slowing surface. Dot ball percentage is rising.",
+      ? "Gujarat Titans are actively attempting to utilize the hard new ball. Shami has adjusted his release point 4cm wider, creating a steeper entry angle."
+      : "Chennai Super Kings have brought mid-off and mid-on inside the circle, challenging the batters to go over the top on a slowing surface. Dot ball percentage is rising.",
     metrics: rotate ? [
       { label: "Release Angle", value: (14.2 + (timeOffset % 10) * 0.1).toFixed(1) + "°" },
       { label: "Deviation", value: "1.8°" }
@@ -28,31 +28,31 @@ export async function GET() {
         id: `insight_${timeOffset}`,
         timestamp: "Live",
         title: rotate ? "Pace change detected" : "Length fluctuation",
-        description: rotate ? "Bumrah has dropped his average speed by 4 km/h in this spell, relying more on off-cutters." : "Starc is bowling 20% more full deliveries in this over.",
+        description: rotate ? "Rashid Khan has dropped his average speed by 4 km/h in this spell, relying more on drift." : "Pathirana is bowling 20% more full deliveries in this over.",
         type: "Activity",
         color: "text-red-400"
       },
       {
         id: "insight_1",
-        timestamp: "33.4",
-        title: "Australia seizes control",
-        description: "Partnership between Head and Labuschagne has absorbed the initial pressure. Dot ball percentage has dropped by 45% in the last 10 overs.",
+        timestamp: "14.2",
+        title: "CSK seizes control",
+        description: "Partnership between Conway and Dube has absorbed the initial pressure. Dot ball percentage has dropped by 45% in the last 4 overs.",
         type: "Activity",
         color: "text-emerald-400"
       },
       {
         id: "insight_2",
-        timestamp: "32.1",
+        timestamp: "12.1",
         title: "Spin ineffectiveness",
-        description: "Indian spinners are extracting 1.2 degrees less turn compared to the first innings, reducing their threat against right-handed batters.",
+        description: "GT spinners are extracting 1.2 degrees less turn compared to the first innings, reducing their threat against right-handed batters.",
         type: "BrainCircuit",
         color: "text-blue-400"
       },
       {
         id: "insight_3",
-        timestamp: "30.0",
+        timestamp: "10.0",
         title: "Strike Rotation Efficiency",
-        description: "Australia is actively maneuvering the field, rotating strike on 62% of legal deliveries this phase, nullifying aggressive field placements.",
+        description: "CSK is actively maneuvering the field, rotating strike on 62% of legal deliveries this phase, nullifying aggressive field placements.",
         type: "Target",
         color: "text-emerald-400"
       }
