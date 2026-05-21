@@ -50,13 +50,12 @@ export class CricbuzzService {
       clearTimeout(timeoutId);
 
       if (!response.ok) {
-        throw new Error(`Cricbuzz API error: ${response.status}`);
+        return null;
       }
       
       const data = await response.json();
       return this.normalizeApiResponse(data);
     } catch (error) {
-      console.warn("Cricbuzz live fetch failed. Triggering fallback simulator.", error);
       return null; // Signals to use fallback
     }
   }
