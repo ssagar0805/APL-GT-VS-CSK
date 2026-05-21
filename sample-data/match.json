@@ -1,0 +1,32 @@
+{
+  "id": "m_123456",
+  "title": "Final: India vs Australia, ICC World Cup",
+  "status": "live",
+  "currentInnings": "away",
+  "teams": {
+    "home": {
+      "name": "India",
+      "shortMode": "IND",
+      "score": "240",
+      "overs": "50.0",
+      "wickets": 10,
+      "runRate": 4.80
+    },
+    "away": {
+      "name": "Australia",
+      "shortMode": "AUS",
+      "score": "192",
+      "overs": "34.2",
+      "wickets": 3,
+      "runRate": 5.59
+    }
+  },
+  "toss": "Australia won the toss and elected to field",
+  "venue": "Narendra Modi Stadium, Ahmedabad",
+  "requiredRunRate": 3.12,
+  "projectedScore": 241,
+  "winProbability": {
+    "home": 18,
+    "away": 82
+  }
+}
