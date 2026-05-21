@@ -25,7 +25,7 @@ export function useLiveMatch() {
     };
 
     load();
-    const interval = setInterval(load, 15000); // Poll every 15s
+    const interval = setInterval(load, 2000);
     return () => {
       active = false;
       clearInterval(interval);
@@ -40,15 +40,18 @@ export function useMomentum() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
+    let active = true;
     const load = async () => {
       try {
         const result = await fetchMomentum();
-        setData(result);
+        if (active) setData(result);
       } finally {
-        setLoading(false);
+        if (active) setLoading(false);
       }
     };
     load();
+    const interval = setInterval(load, 2500);
+    return () => { active = false; clearInterval(interval); };
   }, []);
 
   return { data, loading };
@@ -59,15 +62,18 @@ export function usePredictions() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
+    let active = true;
     const load = async () => {
       try {
         const result = await fetchPredictions();
-        setData(result);
+        if (active) setData(result);
       } finally {
-        setLoading(false);
+        if (active) setLoading(false);
       }
     };
     load();
+    const interval = setInterval(load, 3000);
+    return () => { active = false; clearInterval(interval); };
   }, []);
 
   return { data, loading };
@@ -78,15 +84,18 @@ export function useTacticalInsights() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
+    let active = true;
     const load = async () => {
       try {
         const result = await fetchTacticalInsights();
-        setData(result);
+        if (active) setData(result);
       } finally {
-        setLoading(false);
+        if (active) setLoading(false);
       }
     };
     load();
+    const interval = setInterval(load, 4000);
+    return () => { active = false; clearInterval(interval); };
   }, []);
 
   return { data, loading };

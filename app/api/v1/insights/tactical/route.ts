@@ -1,19 +1,37 @@
 import { NextResponse } from 'next/server';
 
 export async function GET() {
+  const now = new Date();
+  const timeOffset = Math.floor(now.getTime() / 4000); // Rotates every 4s
+
+  const rotate = timeOffset % 2 === 0;
+
   const tacticalInsights = {
-    headline: "Tactical Execution: Bowling",
-    subheadline: "The Dry Ball Strategy",
-    description: "Australia is actively attempting to preserve the ball's roughness to gain reverse swing. Cummins has adjusted his release point 4cm wider, creating a steeper entry angle. This forces the batsman to play away from the body.",
-    metrics: [
-      { label: "Release Angle", value: "14.2°" },
+    headline: rotate ? "Tactical Execution: Bowling" : "Tactical Execution: Baseline",
+    subheadline: rotate ? "The Dry Ball Strategy" : "Squeezing the Singles",
+    description: rotate 
+      ? "Australia is actively attempting to preserve the ball's roughness to gain reverse swing. Cummins has adjusted his release point 4cm wider, creating a steeper entry angle."
+      : "India has brought mid-off and mid-on inside the circle, challenging the batters to go over the top on a slowing surface. Dot ball percentage is rising.",
+    metrics: rotate ? [
+      { label: "Release Angle", value: (14.2 + (timeOffset % 10) * 0.1).toFixed(1) + "°" },
       { label: "Deviation", value: "1.8°" }
+    ] : [
+      { label: "Dot Ball %", value: (45 + (timeOffset % 5)).toString() + "%" },
+      { label: "Avg Speed", value: "88 km/h" }
     ],
     fieldAnalysis: {
       title: "Aggressive Leg-side Trap",
       description: "A short leg and leg gully have been stationed for the last 4 overs. This implies a short-ball barrage strategy against the incoming batsman. The AI notes a 74% likelihood of a bouncer next over."
     },
     contextualInsights: [
+      {
+        id: `insight_${timeOffset}`,
+        timestamp: "Live",
+        title: rotate ? "Pace change detected" : "Length fluctuation",
+        description: rotate ? "Bumrah has dropped his average speed by 4 km/h in this spell, relying more on off-cutters." : "Starc is bowling 20% more full deliveries in this over.",
+        type: "Activity",
+        color: "text-red-400"
+      },
       {
         id: "insight_1",
         timestamp: "33.4",
@@ -38,7 +56,7 @@ export async function GET() {
         type: "Target",
         color: "text-emerald-400"
       }
-    ]
+    ].slice(0, 3) 
   };
 
   return NextResponse.json(tacticalInsights);
