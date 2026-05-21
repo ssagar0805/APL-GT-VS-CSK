@@ -1,29 +1,20 @@
 import { NextResponse } from 'next/server';
+import fs from 'fs';
+import path from 'path';
 
 export async function GET() {
-  const now = new Date();
-  const timeOffset = Math.floor(now.getTime() / 2000); // 2 second ticks
-
-  const awayWinProb = Math.min(99, Math.max(1, 64 + (timeOffset % 9) - 4));
-  const homeWinProb = 100 - awayWinProb;
-
-  const statusOptions = [
-    "Simulation Engine Ready",
-    "Recalculating Trajectory...",
-    "Analyzing Pitch Degradation...",
-    "Simulating Next 5 Overs...",
-  ];
+  const filePath = path.join(process.cwd(), 'lib/data/gt-vs-csk-21may2026.json');
+  const fileContents = fs.readFileSync(filePath, 'utf8');
+  const data = JSON.parse(fileContents);
   
-  const status = statusOptions[Math.floor(timeOffset / 3) % statusOptions.length];
-
   const predictionData = {
-    winProbability: { teamA: homeWinProb, teamB: awayWinProb },
+    winProbability: data.winProbability,
     keyDrivers: [
-      { text: "Target score proximity", impact: awayWinProb > 65 ? "+14%" : "+12%" },
-      { text: "Wickets in hand", impact: (timeOffset % 3 === 0) ? "+7%" : "+8%" },
-      { text: "Current Run Rate", impact: (timeOffset % 2 === 0) ? "+2%" : "-1%" }
+      { text: "Target score proximity", impact: "+45%" },
+      { text: "Wickets in hand", impact: "-25%" },
+      { text: "Current Run Rate", impact: "-15%" }
     ],
-    status: status
+    status: "Final Result Concluded"
   };
 
   return NextResponse.json(predictionData);

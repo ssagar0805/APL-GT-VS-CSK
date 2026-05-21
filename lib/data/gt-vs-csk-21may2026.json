@@ -1,0 +1,161 @@
+{
+  "matchMetadata": {
+    "id": "m_ipl_2026_66",
+    "title": "Match 66: Gujarat Titans vs Chennai Super Kings, IPL 2026",
+    "status": "completed",
+    "venue": "Narendra Modi Stadium, Ahmedabad",
+    "date": "May 21, 2026",
+    "toss": "Chennai Super Kings won the toss and elected to field",
+    "result": "Gujarat Titans won by 89 runs",
+    "manOfTheMatch": "Shubman Gill"
+  },
+  "scorecard": {
+    "currentInnings": "away",
+    "teams": {
+      "home": {
+        "name": "Gujarat Titans",
+        "shortMode": "GT",
+        "score": "229",
+        "overs": "20.0",
+        "wickets": 4,
+        "runRate": "11.45"
+      },
+      "away": {
+        "name": "Chennai Super Kings",
+        "shortMode": "CSK",
+        "score": "140",
+        "overs": "18.2",
+        "wickets": 10,
+        "runRate": "7.63"
+      }
+    },
+    "requiredRunRate": "0.00",
+    "projectedScore": 229,
+    "winProbability": {
+      "home": 100,
+      "away": 0
+    }
+  },
+  "momentum": [
+    { "over": 1, "team1": 52, "team2": 48 },
+    { "over": 2, "team1": 55, "team2": 45 },
+    { "over": 4, "team1": 60, "team2": 40 },
+    { "over": 6, "team1": 68, "team2": 32 },
+    { "over": 8, "team1": 65, "team2": 35 },
+    { "over": 10, "team1": 72, "team2": 28 },
+    { "over": 12, "team1": 80, "team2": 20 },
+    { "over": 14, "team1": 85, "team2": 15 },
+    { "over": 16, "team1": 82, "team2": 18 },
+    { "over": 18, "team1": 90, "team2": 10 },
+    { "over": 20, "team1": 95, "team2": 5 },
+    { "over": 22, "team1": 96, "team2": 4 },
+    { "over": 24, "team1": 92, "team2": 8 },
+    { "over": 26, "team1": 94, "team2": 6 },
+    { "over": 28, "team1": 97, "team2": 3 },
+    { "over": 30, "team1": 98, "team2": 2 },
+    { "over": 32, "team1": 99, "team2": 1 },
+    { "over": 34, "team1": 99, "team2": 1 },
+    { "over": 36, "team1": 100, "team2": 0 },
+    { "over": 38, "team1": 100, "team2": 0 }
+  ],
+  "tacticalInsights": [
+    {
+      "id": "insight_1",
+      "timestamp": "Post-match",
+      "title": "Middle-Over Spin Choke",
+      "description": "GT spinners Rashid Khan and Noor Ahmad combined for 5 wickets, restricting CSK to just 4 boundaries between overs 7 and 15.",
+      "type": "Target",
+      "color": "text-blue-400"
+    },
+    {
+      "id": "insight_2",
+      "timestamp": "12.4",
+      "title": "Pace Off Execution",
+      "description": "Mohit Sharma heavily utilized back-of-a-length off-cutters, inducing false shots on 45% of deliveries faced by Dube.",
+      "type": "BrainCircuit",
+      "color": "text-yellow-500"
+    },
+    {
+      "id": "insight_3",
+      "timestamp": "6.0",
+      "title": "Powerplay Acceleration",
+      "description": "Gill and Sai Sudharsan exploited the powerplay by targeting straight down the ground, adding 68 runs without losing a wicket.",
+      "type": "Activity",
+      "color": "text-emerald-400"
+    }
+  ],
+  "tacticalPreview": {
+    "headline": "Defending 229: The Squeeze",
+    "subheadline": "Relentless Line and Length",
+    "description": "GT bowlers consistently targeted the hard length outside off stump to CSK's right-handers, eliminating scoring opportunities on the leg side.",
+    "metrics": [
+      { "label": "Dot Ball %", "value": "42%" },
+      { "label": "Avg Pace Drop", "value": "12 km/h" }
+    ]
+  },
+  "fieldAnalysis": {
+    "title": "Deep Mid-Wicket Trap",
+    "description": "GT successfully executed the long-boundary trap against Dube, forcing him to hit against the spin towards the largest dimension."
+  },
+  "overProgression": {
+    "home": [
+      { "over": 1, "score": "8/0", "runsThisOver": 8, "runRate": 8.0, "momentum": 52, "phase": "Powerplay" },
+      { "over": 2, "score": "20/0", "runsThisOver": 12, "runRate": 10.0, "momentum": 55, "phase": "Powerplay" },
+      { "over": 3, "score": "32/0", "runsThisOver": 12, "runRate": 10.6, "momentum": 58, "phase": "Powerplay" },
+      { "over": 4, "score": "45/0", "runsThisOver": 13, "runRate": 11.2, "momentum": 60, "phase": "Powerplay" },
+      { "over": 5, "score": "56/0", "runsThisOver": 11, "runRate": 11.2, "momentum": 63, "phase": "Powerplay" },
+      { "over": 6, "score": "68/0", "runsThisOver": 12, "runRate": 11.3, "momentum": 68, "phase": "Powerplay" },
+      { "over": 7, "score": "75/0", "runsThisOver": 7, "runRate": 10.7, "momentum": 67, "phase": "Middle" },
+      { "over": 8, "score": "85/0", "runsThisOver": 10, "runRate": 10.6, "momentum": 65, "phase": "Middle" },
+      { "over": 9, "score": "98/0", "runsThisOver": 13, "runRate": 10.8, "momentum": 69, "phase": "Middle" },
+      { "over": 10, "score": "112/0", "runsThisOver": 14, "runRate": 11.2, "momentum": 72, "phase": "Middle" },
+      { "over": 11, "score": "122/0", "runsThisOver": 10, "runRate": 11.1, "momentum": 71, "phase": "Middle" },
+      { "over": 12, "score": "136/0", "runsThisOver": 14, "runRate": 11.3, "momentum": 75, "phase": "Middle" },
+      { "over": 13, "score": "145/1", "runsThisOver": 9, "runRate": 11.1, "momentum": 68, "phase": "Middle", "wickets": 1 },
+      { "over": 14, "score": "156/1", "runsThisOver": 11, "runRate": 11.1, "momentum": 71, "phase": "Middle" },
+      { "over": 15, "score": "170/1", "runsThisOver": 14, "runRate": 11.3, "momentum": 76, "phase": "Middle" },
+      { "over": 16, "score": "180/1", "runsThisOver": 10, "runRate": 11.2, "momentum": 78, "phase": "Death" },
+      { "over": 17, "score": "195/1", "runsThisOver": 15, "runRate": 11.4, "momentum": 82, "phase": "Death" },
+      { "over": 18, "score": "205/2", "runsThisOver": 10, "runRate": 11.3, "momentum": 79, "phase": "Death", "wickets": 1 },
+      { "over": 19, "score": "218/3", "runsThisOver": 13, "runRate": 11.4, "momentum": 81, "phase": "Death", "wickets": 1 },
+      { "over": 20, "score": "229/4", "runsThisOver": 11, "runRate": 11.45, "momentum": 85, "phase": "Death", "wickets": 1 }
+    ],
+    "away": [
+      { "over": 1, "score": "12/0", "runsThisOver": 12, "runRate": 12.0, "momentum": 48, "phase": "Powerplay" },
+      { "over": 2, "score": "20/1", "runsThisOver": 8, "runRate": 10.0, "momentum": 45, "phase": "Powerplay", "wickets": 1 },
+      { "over": 3, "score": "26/1", "runsThisOver": 6, "runRate": 8.6, "momentum": 42, "phase": "Powerplay" },
+      { "over": 4, "score": "35/2", "runsThisOver": 9, "runRate": 8.7, "momentum": 38, "phase": "Powerplay", "wickets": 1 },
+      { "over": 5, "score": "43/2", "runsThisOver": 8, "runRate": 8.6, "momentum": 35, "phase": "Powerplay" },
+      { "over": 6, "score": "48/3", "runsThisOver": 5, "runRate": 8.0, "momentum": 30, "phase": "Powerplay", "wickets": 1 },
+      { "over": 7, "score": "56/3", "runsThisOver": 8, "runRate": 8.0, "momentum": 32, "phase": "Middle" },
+      { "over": 8, "score": "62/4", "runsThisOver": 6, "runRate": 7.75, "momentum": 28, "phase": "Middle", "wickets": 1 },
+      { "over": 9, "score": "68/4", "runsThisOver": 6, "runRate": 7.5, "momentum": 27, "phase": "Middle" },
+      { "over": 10, "score": "75/4", "runsThisOver": 7, "runRate": 7.5, "momentum": 28, "phase": "Middle" },
+      { "over": 11, "score": "82/5", "runsThisOver": 7, "runRate": 7.45, "momentum": 24, "phase": "Middle", "wickets": 1 },
+      { "over": 12, "score": "88/5", "runsThisOver": 6, "runRate": 7.33, "momentum": 22, "phase": "Middle" },
+      { "over": 13, "score": "100/5", "runsThisOver": 12, "runRate": 7.69, "momentum": 26, "phase": "Middle" },
+      { "over": 14, "score": "108/6", "runsThisOver": 8, "runRate": 7.71, "momentum": 21, "phase": "Middle", "wickets": 1 },
+      { "over": 15, "score": "115/7", "runsThisOver": 7, "runRate": 7.66, "momentum": 18, "phase": "Middle", "wickets": 1 },
+      { "over": 16, "score": "125/7", "runsThisOver": 10, "runRate": 7.81, "momentum": 19, "phase": "Death" },
+      { "over": 17, "score": "130/8", "runsThisOver": 5, "runRate": 7.64, "momentum": 15, "phase": "Death", "wickets": 1 },
+      { "over": 18, "score": "138/9", "runsThisOver": 8, "runRate": 7.66, "momentum": 10, "phase": "Death", "wickets": 1 },
+      { "over": 18.2, "score": "140/10", "runsThisOver": 2, "runRate": 7.63, "momentum": 5, "phase": "Death", "wickets": 1 }
+    ]
+  },
+  "timelineEvents": [
+    { "over": "5.6", "event": "FOUR", "player": "Gill", "bowler": "Chahar", "runs": 4, "impact": "+4 GT momentum" },
+    { "over": "12.3", "event": "WICKET", "player": "Saha", "bowler": "Theekshana", "runs": 0, "impact": "-15 GT momentum" },
+    { "over": "14.2", "event": "SIX", "player": "Sudharsan", "bowler": "Jadeja", "runs": 6, "impact": "+8 GT momentum" },
+    { "over": "17.4", "event": "WICKET", "player": "Gill", "bowler": "Pathirana", "runs": 0, "impact": "-10 GT momentum" },
+    { "over": "1.3", "event": "WICKET", "player": "Gaikwad", "bowler": "Shami", "runs": 0, "impact": "+15 GT pressure" },
+    { "over": "3.5", "event": "WICKET", "player": "Conway", "bowler": "Shami", "runs": 0, "impact": "+20 GT pressure" },
+    { "over": "5.4", "event": "WICKET", "player": "Rahane", "bowler": "Rashid", "runs": 0, "impact": "+15 GT pressure" },
+    { "over": "7.5", "event": "WICKET", "player": "Moeen", "bowler": "Rashid", "runs": 0, "impact": "+12 GT pressure" },
+    { "over": "12.2", "event": "SIX", "player": "Dube", "bowler": "Noor", "runs": 6, "impact": "-5 GT pressure" },
+    { "over": "13.4", "event": "WICKET", "player": "Dube", "bowler": "Mohit", "runs": 0, "impact": "+25 GT pressure" }
+  ],
+  "winProbability": {
+    "home": 100,
+    "away": 0
+  }
+}

@@ -5,7 +5,7 @@ import { WinProbabilityPreview, BallSpeedPreview, FieldConfigurationPreview } fr
 
 export default function Home() {
   return (
-    <div className="max-w-7xl mx-auto space-y-6">
+    <div className="max-w-7xl mx-auto space-y-4">
       
       {/* Top visual section: Live Scorecard */}
       <section>
@@ -13,13 +13,13 @@ export default function Home() {
       </section>
       
       {/* Middle visual section: Momentum & Insights */}
-      <section className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+      <section className="grid grid-cols-1 lg:grid-cols-3 gap-4">
         <MomentumChart />
         <InsightPanel />
       </section>
 
       {/* Bottom visual section: Live Previews */}
-      <section className="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <section className="grid grid-cols-1 md:grid-cols-3 gap-4">
         <WinProbabilityPreview />
         <BallSpeedPreview />
         <FieldConfigurationPreview />

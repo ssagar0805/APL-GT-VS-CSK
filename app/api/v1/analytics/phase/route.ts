@@ -7,9 +7,5 @@ export async function GET() {
   const fileContents = fs.readFileSync(filePath, 'utf8');
   const data = JSON.parse(fileContents);
   
-  return NextResponse.json({
-    status: "active",
-    primary_driver: "wicket_pressure",
-    series: data.momentum,
-  });
+  return NextResponse.json(data.overProgression);
 }
