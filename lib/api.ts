@@ -18,3 +18,4 @@ export const fetchMomentum = () => fetcher<any>('/api/v1/analytics/momentum');
 export const fetchPredictions = () => fetcher<any>('/api/v1/analytics/predictions');
 export const fetchTacticalInsights = () => fetcher<any>('/api/v1/insights/tactical');
 export const fetchPhaseDominance = () => fetcher<any>('/api/v1/analytics/phase');
+export const fetchLiveDuel = () => fetcher<any>('/api/v1/match/duel');

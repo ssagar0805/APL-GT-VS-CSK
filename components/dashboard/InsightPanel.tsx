@@ -15,7 +15,7 @@ export function InsightPanel() {
 
   if (loading) {
      return (
-       <Card className="col-span-1 h-full border-white/10 bg-gradient-to-b from-white/[0.03] to-transparent rounded-2xl flex flex-col justify-center items-center h-[#280px]">
+       <Card className="col-span-1 h-full border-white/10 bg-gradient-to-b from-white/[0.03] to-transparent rounded-2xl flex flex-col justify-center items-center">
          <div className="w-6 h-6 rounded-full border-2 border-white/20 border-t-emerald-500 animate-spin mb-3"></div>
          <p className="text-[10px] uppercase tracking-widest text-slate-500 font-bold">Synthesizing Insights...</p>
        </Card>
@@ -25,7 +25,7 @@ export function InsightPanel() {
   const insightsList = data?.contextualInsights || [];
 
   return (
-    <Card className="col-span-1 h-full border-white/10 bg-gradient-to-b from-white/[0.03] to-transparent rounded-2xl flex flex-col h-[280px]">
+    <Card className="h-full border-white/10 bg-gradient-to-b from-white/[0.03] to-transparent rounded-2xl flex flex-col min-h-0">
       <CardHeader className="border-b border-white/10 pb-3 flex flex-row items-center justify-between">
         <CardTitle className="text-[10px] uppercase font-black tracking-[0.2em] text-emerald-400">Tactical Feed</CardTitle>
         <Sparkles className="w-3.5 h-3.5 text-emerald-500" />

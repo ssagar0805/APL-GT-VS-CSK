@@ -9,7 +9,7 @@ export function MomentumChart() {
 
   if (loading) {
     return (
-      <Card className="col-span-1 md:col-span-2 overflow-hidden border-white/10 bg-white/[0.03] rounded-2xl flex flex-col h-[280px] justify-center items-center">
+      <Card className="overflow-hidden border-white/10 bg-white/[0.03] rounded-2xl flex flex-col h-[280px] justify-center items-center">
          <div className="w-8 h-8 rounded-full border-2 border-white/20 border-t-emerald-500 animate-spin mb-4"></div>
          <p className="text-xs uppercase tracking-widest text-slate-500 font-bold">Initializing Engine...</p>
       </Card>
@@ -19,7 +19,7 @@ export function MomentumChart() {
   const momentumSeries = data?.series || [];
 
   return (
-    <Card className="col-span-1 md:col-span-2 overflow-hidden border-white/10 bg-white/[0.03] rounded-2xl flex flex-col h-[280px]">
+    <Card className="overflow-hidden border-white/10 bg-white/[0.03] rounded-2xl flex flex-col h-[280px]">
       <CardHeader className="border-b border-white/10 pb-4">
         <div className="flex justify-between items-center">
           <CardTitle className="text-[10px] uppercase font-black tracking-[0.2em] text-slate-400">Live Structural Momentum</CardTitle>

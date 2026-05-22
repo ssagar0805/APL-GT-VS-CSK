@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { fetchLiveMatch, fetchMomentum, fetchPredictions, fetchTacticalInsights, fetchPhaseDominance } from '@/lib/api';
+import { fetchLiveMatch, fetchMomentum, fetchPredictions, fetchTacticalInsights, fetchPhaseDominance, fetchLiveDuel } from '@/lib/api';
 
 export function useLiveMatch() {
   const [data, setData] = useState<any>(null);
@@ -110,6 +110,28 @@ export function usePhaseDominance() {
     const load = async () => {
       try {
         const result = await fetchPhaseDominance();
+        if (active) setData(result);
+      } finally {
+        if (active) setLoading(false);
+      }
+    };
+    load();
+    const interval = setInterval(load, 5000);
+    return () => { active = false; clearInterval(interval); };
+  }, []);
+
+  return { data, loading };
+}
+
+export function useLiveDuel() {
+  const [data, setData] = useState<any>(null);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    let active = true;
+    const load = async () => {
+      try {
+        const result = await fetchLiveDuel();
         if (active) setData(result);
       } finally {
         if (active) setLoading(false);

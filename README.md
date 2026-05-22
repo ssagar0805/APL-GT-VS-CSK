@@ -1,64 +1,52 @@
-# Cricket Intelligence AI 🏏
+# CricAI Vision
+**Real-Time Tactical Cricket Intelligence Platform**
 
-**A cinematic, AI-powered live cricket analytics command center.** 
+## Problem Statement: Data & Insights
+> "Design a solution that translates complex match and player data into intuitive and actionable insights for fans. The system should simplify advanced statistics and present them in a way that enhances understanding, decision-making, and overall engagement with the sport."
 
-Cricket Intelligence AI transforms raw match data into actionable, broadcast-quality intelligence. Designed for tactical analysts and cricket enthusiasts, this platform delivers real-time match dynamics, momentum shifts, and contextual insights through a premium, dark-themed dashboard.
+## What We Built
+CricAI Vision is a real-time cricket tactical intelligence platform that transforms raw match telemetry, player statistics, and live match data into actionable operational insights. Designed for modern coaches, commentators, and engaged fans, it operates as a live command center rather than a traditional static dashboard.
 
-![Dashboard Preview](https://img.shields.io/badge/UI-Cinematic_Dark_Theme-000000?style=for-the-badge&logo=next.js&logoColor=white) ![Hackathon](https://img.shields.io/badge/Status-Hackathon_Ready-10B981?style=for-the-badge&logo=google&logoColor=white)
+## Key Innovation
+Traditional dashboards report *what* happened. CricAI Vision reports *why* it happened and *what might happen next*. By integrating live data streams with the Gemini API, we shift the paradigm from reactive data presentation to proactive tactical intelligence. 
 
----
+## Core Features
+*   **Live Tactical Command Center:** A dense, operationally focused primary interface designed for rapid situational awareness and tactical shifts.
+*   **Batter vs Bowler Tactical Duel:** A continuous real-time analysis of the active matchup, detailing player vulnerabilities, scoring zones, and immediate threats.
+*   **AI Tactical Feed:** A stream of contextual insights—from field placement traps to bowler variations—synthesized by AI based on live match conditions.
+*   **Momentum Intelligence:** A live structural momentum engine that tracks pressure shifts and game-state dominance beyond conventional Run Rate tracking.
+*   **Timeline Event Engine:** A chronological flow of match-defining events, highlighting key swinging points and momentum structural breaks.
+*   **Win Probability Engine:** A dynamic win prediction model factoring in historical context, current pressure, and remaining resources.
+*   **Field Configuration Intelligence:** AI-driven interpretation of field placements, translating coordinate setups into contextual tactical meaning (e.g., "Leg-side trap for Dube").
 
-## ✨ Key Features
+## AI & Data Architecture
+*   **Generative AI Hub (Gemini API):** Acts as the tactical engine, ingesting numerical data and producing contextual intelligence, matchup risks, and strategic formulations.
+*   **Live Data Ingestion (Cricbuzz / RapidAPI):** Pipeline configured for real-time match state aggregation.
+*   **Tactical Synthesis Pipeline:** A highly optimized data layer that normalizes raw structural inputs into a unified match-state object for rapid client-side rendering.
 
-- **Live Data Pipeline & Simulation Engine**
-  Integrates with the live Cricbuzz (unofficial) API, featuring a seamless fallback to a sophisticated internal live-match simulator to ensure zero downtime during high-traffic intervals.
-  
-- **Structural Momentum Tracking**
-  A live momentum engine visually tracks match dominance, pressure indexing, and phase swings, rendering them through fluid `Recharts` area graphs.
+## Engineering Highlights
+*   **Stateless Resilience:** Built with robust hydration protocols and graceful degradation to maintain performance under active data loads.
+*   **Component-Driven Intelligence:** The UI architecture isolates complex visual modules (e.g., the tactical duel view and momentum strip) for seamless rendering.
+*   **Next.js Server Components & Edge Execution:** Leveraging modern React paradigms for minimal client-side payload and rapid time-to-interactive metrics.
 
-- **AI-Powered Tactical Feed (Gemini Ready)**
-  Simulates AI-generated observations on bowling strategies (e.g., *The Dry Ball Strategy*, pace drops, release angles) and aggressive field configurations.
+## GT vs CSK: Historical Match Intelligence
+To demonstrate the platform's full capability, we integrated a bespoke, normalized dataset based on a highly tactical IPL 2026 clash between Gujarat Titans and Chennai Super Kings. This dataset serves as a rigorous testing ground for our AI models to analyze extreme pressure environments and rapid momentum swings.
 
-- **Win Probability Simulator**
-  Dynamic, animated trajectory bars calculating real-time win probability and chase confidence derived from current run rates, required run rates, and wickets in hand.
+## Why This Matters
+Information overload is a critical issue in modern sports analytics. Teams and broadcasters possess terabytes of data but struggle to extract immediate tactical value during a live match. CricAI Vision solves this by distilling data into distinct, operational intelligence paradigms that inform split-second decisions.
 
-- **Analyst-Console Design**
-  A premium, broadcast-style visual identity utilizing Tailwind CSS. Features micro-animations, glowing tactical indicators, and highly scannable data layouts.
+## Future Scope
+*   **Predictive Delivery Simulation:** Forecasting the next delivery type based on historical patterns and current match pressure.
+*   **Computer Vision Integration:** Real-time broadcast overlay parsing for immediate spatial tracking.
+*   **Personalised Fan Experiences:** Modulating the depth of technical jargon based on user profiles (from casual fan to certified analyst).
 
-## 🛠️ Architecture & Tech Stack
+## Tech Stack
+*   **Framework:** Next.js 15+ (App Router)
+*   **Language:** TypeScript
+*   **Styling:** Tailwind CSS (Server-Side configured)
+*   **Data Visualization:** D3.js, Recharts
+*   **Icons & Layout:** Lucide React, Radix UI primitives
+*   **Intelligence:** Google Gemini API
 
-This project is built prioritizing scalable architecture and modular component design over unrequested complexity:
-
-* **Framework:** Next.js 15 (React 19)
-* **Styling:** Tailwind CSS (v4)
-* **Icons:** `lucide-react`
-* **Charts:** `recharts` for fluid, real-time data visualization
-* **Data Layer:** Custom Cricbuzz API Normalization Layer & Timed Polling Engine
-* **AI:** Configured for Google Gemini integration (`@google/genai`) for real-time natural language synthesis.
-
-## 🚀 Getting Started
-
-**1. Install Dependencies**
-```bash
-npm install
-```
-
-**2. Environment Variables**
-Create a `.env` file from the example if you wish to configure live AI capabilities via Gemini:
-```bash
-cp .env.example .env
-```
-*(Add your Gemini API Key)*
-
-**3. Run the Development Server**
-```bash
-npm run dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) to view the live dashboard.
-
-## 🧠 Why This Stands Out (For Judges & AI Screeners)
-
-1. **Production-Ready Quality:** Avoids generic dashboard layouts in favor of deliberate, intentional design pairings. Typography, negative space, and transitions act cohesively.
-2. **Robust Fallbacks:** Understands third-party API reliability limits. If the external live feed fails (403/Rate Limit), the app elegantly falls back to a time-based simulated engine without breaking the UI.
-3. **Focused Scope:** Executes the objective perfectly—a highly intelligent, visually striking sports data platform—without over-engineering into unrelated domains.
+## The Final Vision
+A unified intelligence platform that redefines how cricket is analyzed, understood, and strategized—bringing the analytical power of professional backrooms directly to the surface in real-time.

@@ -13,7 +13,7 @@ export function TimelineEvents() {
   }
 
   return (
-    <div className="space-y-3 h-[250px] overflow-y-auto pr-2 scrollbar-thin scrollbar-thumb-white/10 scrollbar-track-transparent">
+    <div className="space-y-3 h-full overflow-y-auto pr-2 scrollbar-thin scrollbar-thumb-white/10 scrollbar-track-transparent">
       {events.map((item: any, i: number) => {
         const isPositive = item.impact.includes('+');
         const isWicket = item.event === 'WICKET';

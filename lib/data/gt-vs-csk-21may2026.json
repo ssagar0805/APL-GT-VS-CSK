@@ -157,5 +157,43 @@
   "winProbability": {
     "home": 100,
     "away": 0
+  },
+  "liveDuel": {
+    "batters": [
+      {
+        "name": "Shivam Dube",
+        "runs": 32,
+        "balls": 21,
+        "strikeRate": 152.3,
+        "recentShots": ["1", "4", "0", "6", "1", "W"],
+        "matchupVsBowler": "Weak vs short ball"
+      },
+      {
+        "name": "Ravindra Jadeja",
+        "runs": 12,
+        "balls": 8,
+        "strikeRate": 150.0,
+        "recentShots": ["1", "2", "1", "4", "0", "1"],
+        "matchupVsBowler": "Strong vs pace"
+      }
+    ],
+    "bowler": {
+      "name": "Mohit Sharma",
+      "overs": "2.4",
+      "runs": 18,
+      "wickets": 2,
+      "economy": 6.75,
+      "avgSpeed": "128 km/h",
+      "variations": ["Off-cutter", "Back of length"],
+      "dotBallPercent": "45%",
+      "recentDeliveries": ["128k", "115k", "130k", "112k", "129k", "W"]
+    },
+    "nextBatter": {
+      "name": "MS Dhoni",
+      "strengths": ["Finishing", "Pace on ball", "Deep crease"],
+      "weaknesses": ["Pace away from body", "Wrist spin (googlies)"],
+      "matchupRisk": "High vs Rashid Khan",
+      "tacticalNotes": "Keep it wide yorker or back of length straight. Avoid length."
+    }
   }
 }
