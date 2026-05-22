@@ -1,6 +1,9 @@
 # CricAI Vision
 **Real-Time Tactical Cricket Intelligence Platform**
 
+## Live Demo
+**👉 [View Live Application](https://apl-gt-vs-csk.vercel.app)**
+
 ## Problem Statement: Data & Insights
 > "Design a solution that translates complex match and player data into intuitive and actionable insights for fans. The system should simplify advanced statistics and present them in a way that enhances understanding, decision-making, and overall engagement with the sport."
 
