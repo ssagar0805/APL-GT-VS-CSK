@@ -48,5 +48,45 @@ Information overload is a critical issue in modern sports analytics. Teams and b
 *   **Icons & Layout:** Lucide React, Radix UI primitives
 *   **Intelligence:** Google Gemini API
 
+## How to Run Locally
+
+Follow these steps to get the project up and running on your local machine:
+
+### 1. Prerequisites
+*   Make sure you have **Node.js** (v18 or higher) installed.
+*   Make sure you have **npm** (or yarn/pnpm) installed.
+
+### 2. Clone the Repository
+```bash
+git clone <repository-url>
+cd <repository-directory>
+```
+
+### 3. Install Dependencies
+```bash
+npm install
+```
+
+### 4. Configure Environment Variables
+Create a `.env` file in the root of the project. If there is a `.env.example` file, use that as a reference. At a minimum, you will need your Gemini API key if you plan to use AI features.
+```bash
+# Create a new `.env` file
+touch .env
+
+# Add your Gemini API key inside the .env file:
+GEMINI_API_KEY=your_gemini_api_key_here
+```
+
+### 5. Start the Development Server
+```bash
+npm run dev
+```
+
+### 6. View the Application
+Open your browser and navigate to:
+```text
+http://localhost:3000
+```
+
 ## The Final Vision
 A unified intelligence platform that redefines how cricket is analyzed, understood, and strategized—bringing the analytical power of professional backrooms directly to the surface in real-time.
